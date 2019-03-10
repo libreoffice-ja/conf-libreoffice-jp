@@ -1,0 +1,5 @@
+<header>
+  <% current_page.data['menu'].each do |m| %>
+    <a class="button" href="<%= m[:url] %>"><%= m[:name] %></a>
+  <% end %>
+</header>
