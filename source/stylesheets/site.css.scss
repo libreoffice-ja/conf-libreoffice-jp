@@ -36,9 +36,9 @@ header {
 }
 
 footer {
-  background-color: white;
-  color: #18A303;
-  margin: 0px;
+  background-color: #18A303;
+  color: white;
+  margin: 0pt;
   padding-top: 2ex;
   padding-bottom: 2ex;
 }
@@ -99,7 +99,7 @@ div.inner {
 table.guest {
   text-align: left;
   vertical-align: top;
-  margin: 2em 2em
+  margin: 2em 2em;
 }
 
 .guestname {
@@ -110,4 +110,30 @@ table.guest {
 img.guest {
   width: 20vw;
   max-width: 120px;
+}
+
+table.sponsor {
+  vertical-align: top;
+}
+.sponsor th {
+  text-align: center;
+  padding: 2vw;
+}
+.sponsor td {
+  text-align: left;
+  padding: 2vw;
+}
+
+.sponsor img {
+  width: 100%;
+  min-width: 300px;
+}
+
+@media screen and (max-width: 640px) {
+  .sponsor th,
+  .sponsor td {
+    border-bottom: none;
+    display: block;
+    width: 100%;
+  }
 }
