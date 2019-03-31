@@ -1,5 +1,7 @@
-<header>
-  <% current_page.data['menu'].each do |m| %>
-    <a class="button" href="<%= m[:url] %>"><%= m[:name] %></a>
-  <% end %>
-</header>
+<nav class="navbar justify-content-end">
+  <ul class="nav">
+    <% current_page.data['menu'].each do |m| %>
+      <li class="nav-item"><a class="nav-link" href="<%= m[:url] %>"><%= m[:name] %></a></li>
+    <% end %>
+  </ul>
+</nav>
