@@ -1,3 +1,4 @@
+@import "bootstrap";
 
 $libo_main: #18A303;
 $libo_sub:  #106802;
@@ -5,7 +6,9 @@ $libo_sub:  #106802;
 .jumbotron {
   background-image: url("/images/libo-asia-tokyo-title.png");
   background-size: cover;
-  background-position: center 60%;
+  background-position: center center;
+  position: relative;
+  padding-top: 4rem;
+  padding-bottom: 10rem;
 }
 
-@import "bootstrap";
