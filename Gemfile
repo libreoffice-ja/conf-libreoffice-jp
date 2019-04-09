@@ -8,3 +8,4 @@ gem "middleman-sprockets", "~> 4.0.0.rc"
 gem 'bootstrap', require: false
 gem 'sass'
 gem 'jquery-middleman'
+gem 'actionview', '>= 5.0.7.2'
