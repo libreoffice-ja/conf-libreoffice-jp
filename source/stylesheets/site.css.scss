@@ -21,3 +21,15 @@ $libo_sub:  #106802;
 .footer {
   background-color: $libo_main;
 }
+
+.table {
+  table-layout: fixed;
+
+  .time {
+    width: 6em;
+  }
+}
+
+.table .speaker {
+  font-weight: bold;
+}
