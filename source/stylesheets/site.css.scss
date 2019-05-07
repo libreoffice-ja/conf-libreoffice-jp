@@ -1,154 +1,35 @@
-body {
-  background-color: #dddddd;
-  color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
-    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
-    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  margin: 0px;
-  text-align: center;
+$enable-responsive-font-sizes: true;
+
+@import "bootstrap";
+
+$libo_main: #18A303;
+$libo_sub:  #106802;
+
+.jumbotron {
+  background-image: url("/images/libo-asia-tokyo-title.png");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
 }
 
-a {
-  color: rgba(#000, 0.7);
+.container hr{
+  border-color: $libo_main;
+  border-width: 3px;
+  max-width: 50px;
+}
 
-  &:focus,
-  &:hover {
-    color: rgba(#000, 0.6);
+.footer {
+  background-color: $libo_main;
+}
+
+.table {
+  table-layout: fixed;
+
+  .time {
+    width: 6em;
   }
 }
 
-h1 {
-  margin-block-start: 0%;
-  margin-block-end: 10px;
-  font-size: 8vw;
-  color: white;
-}
-
-h2 {
-  font-size: 18pt;
+.table .speaker {
   font-weight: bold;
-}
-
-header {
-  text-align: right;
-  padding: 0 0 1ex 1ex;
-}
-
-footer {
-  background-color: #18A303;
-  color: white;
-  margin: 0pt;
-  padding-top: 2ex;
-  padding-bottom: 2ex;
-}
-
-a.button {
-  display: inline-block;
-  padding: 0.3em 1em;
-  text-decoration: none;
-  border-radius: 3px;
-  transition: .4s;
-  border: solid 2px white;
-  background-color: white;
-  color: black;
-}
-
-a.button:hover {
-  background-color: darkgray;
-  color: white;
-
-}
-
-#title {
-  padding-top: 1ex;
-  padding-bottom: 1ex;
-  background-image: url("../images/libo-asia-tokyo-title.png");
-  background-size: 100%;
-}
-
-.dates {
-  color: white;
-  font-weight: bold;
-}
-
-.dates-inner {
-  width: 400px;
-  margin: 0 auto;
-  text-align: left;
-}
-
-div.content {
-  padding-top: 2ex;
-  padding-bottom: 2ex;
-}
-
-div.content-even {
-  background-color: lightgray;
-}
-
-div.content-even {
-  background-color: #eeeeee;
-}
-
-div.inner {
-  width: 80%;
-  margin: 0 auto;
-}
-
-table.guest {
-  text-align: left;
-  vertical-align: top;
-  margin: 2em 2em;
-}
-
-.guestname {
-  font-size: 16pt;
-  text-decoration: underline;
-}
-
-img.guest {
-  width: 20vw;
-  max-width: 120px;
-}
-
-table.sponsor {
-  vertical-align: top;
-}
-.sponsor th {
-  text-align: center;
-  padding: 2vw;
-}
-.sponsor td {
-  text-align: left;
-  padding: 2vw;
-}
-
-.sponsor img {
-  width: 100%;
-  min-width: 300px;
-}
-
-@media screen and (max-width: 640px) {
-  .sponsor th,
-  .sponsor td {
-    border-bottom: none;
-    display: block;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .osm {
-    position: relative;
-    width: 100%;
-    padding: calc(350 / 425 * 100%) 0 0;
-  }
-  .osm iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
 }
