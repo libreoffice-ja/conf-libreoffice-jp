@@ -33,3 +33,9 @@ $libo_sub:  #106802;
 .table .speaker {
   font-weight: bold;
 }
+
+a[href$='.pdf']{
+  padding: 2px;
+  padding-left: 20px;
+  background: url("/images/page_white_acrobat.png") no-repeat left center;
+}
